@@ -4,19 +4,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="horizontal">
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/search_text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"/>
+        android:hint="Enter Keyword Here"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/search_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="search"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:text="Go" />
 
 </LinearLayout>
